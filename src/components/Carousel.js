@@ -11,24 +11,29 @@ function Carousel() {
 		setCurrent(current === 0 ? cities.length - 1 : current - 1);
 	};
 	return (
-		<div className='carousel' data-testid='carousel'>
-			<div className='carousel-wrapper'>
-				{
-					cities.map(({ image, title }, index) => {
-						return (
-							<div key={index} className={`carousel-card ${index === current ? 'active' : ''}`}>
-								<img className='card-image' src={image} alt={title} />
-								<div className='card-overlay'>
-									<h2 className='card-title'>{title}</h2>
-								</div>
-							</div>
-						);
-					})
-				}
-				<div data-testid='carousel-arrow-left' className='carousel-arrow-left' onClick={slideLeft}>&lsaquo;</div>
-				<div data-testid='carousel-arrow-right' className='carousel-arrow-right' onClick={slideRight}>&rsaquo;</div>
+		<>
+			<div className='top-content'>
+				<h2>Carousel</h2>
 			</div>
-		</div>
+			<div className='carousel' data-testid='carousel'>
+				<div className='carousel-wrapper'>
+					{
+						cities.map(({ image, title }, index) => {
+							return (
+								<div key={index} className={`carousel-card ${index === current ? 'active' : ''}`}>
+									<img className='card-image' src={image} alt={title} />
+									<div className='card-overlay'>
+										<h2 className='card-title'>{title}</h2>
+									</div>
+								</div>
+							);
+						})
+					}
+					<div data-testid='carousel-arrow-left' className='carousel-arrow-left' onClick={slideLeft}>&lsaquo;</div>
+					<div data-testid='carousel-arrow-right' className='carousel-arrow-right' onClick={slideRight}>&rsaquo;</div>
+				</div>
+			</div>
+		</>
 	)
 }
 

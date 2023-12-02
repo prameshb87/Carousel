@@ -1,3 +1,10 @@
+.top-content {
+    margin-bottom: 40px;
+    font-size: 200%;
+    text-align: center;
+    color: steelblue;
+}
+
 .carousel {
     display: flex;
     height: 400px;
@@ -33,6 +40,7 @@
     transform: scale(1);
     pointer-events: visible;
 }
+
 /* 
 @keyframes left {
     0% {
