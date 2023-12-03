@@ -6,6 +6,9 @@
     align-items: stretch;
     gap: 2rem;
     padding: 0 1rem;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
 }
 
 .site-title {

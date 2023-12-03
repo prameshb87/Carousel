@@ -1,0 +1,17 @@
+.about {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 10px;
+    width: 90%;
+    overflow-y: scroll;
+}
+
+h1 {
+    text-align: center;
+}
+
+section {
+    min-height: 300px;
+    border: 1px solid;
+}

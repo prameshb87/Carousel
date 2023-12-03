@@ -1,0 +1,56 @@
+.projects {
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+
+aside {
+    flex: 0 0 15%;
+    border: 1px solid;
+    align-items: center;
+    background-color: rgba(136, 192, 25, 0.2);
+    padding: 5px;
+}
+
+.projects aside h2, .projects aside li {
+    background-color: rgba(47, 20, 47, 0.8);
+}
+
+/* .projects aside h2 {
+    font
+} */
+
+aside ul {
+    height: calc(100% - 28px);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-top: 20px
+}
+
+aside ul li {
+    border: 1px solid #f2f2f2;
+    
+}
+
+aside ul a {
+    text-decoration: none;
+    color: aliceblue;
+    display: flex;
+    height: 2rem;
+    font-size: 1.2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.current-project {
+    flex: 1 1 85%;
+    border: 1px solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    background-color: rgba(4,55,55,0.9);
+    position: relative;
+}
